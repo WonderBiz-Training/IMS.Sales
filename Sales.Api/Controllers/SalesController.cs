@@ -56,7 +56,7 @@ namespace Sales.Api.Controllers
             try
             {
                 var data = await _salesHeaderServices.CreateSaleHeaderAsync(saleHeader);
-                return data;
+                return Ok(data);
             }
             catch (Exception)
             {
