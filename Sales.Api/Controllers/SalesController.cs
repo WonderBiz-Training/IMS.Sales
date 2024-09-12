@@ -28,9 +28,9 @@ namespace Sales.Api.Controllers
                 var res = await _salesHeaderServices.GetAllSaleHeadersAsync();
                 return  Ok(res);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return NotFound("Sales Not Found");
+                return NotFound(ex.Message);
             }
         }
 
@@ -95,3 +95,5 @@ namespace Sales.Api.Controllers
         }
     }
 }
+
+

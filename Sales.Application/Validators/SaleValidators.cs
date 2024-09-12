@@ -18,7 +18,7 @@ namespace Sales.Application.Validators
                 
             RuleFor(x => x.CustomerId)
                 .NotEmpty()
-                .WithMessage("CustomerId is Reuiqred");
+                .WithMessage("CustomerId is Reuiqred").NotEqual(Guid.Empty).WithMessage("Customer Id does not exists");
 
             RuleFor(x => x.SalesQuantity)
                 .NotEmpty()

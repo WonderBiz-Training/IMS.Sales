@@ -30,7 +30,7 @@ namespace Sales.Api.DTOs
 
     public record CreateSalesProductListDto(
          string SalesCode,
-         Guid CustomerId,
+         [Required(ErrorMessage = "CustomerId is required")] Guid CustomerId,
          // long ProductId,
          long SalesQuantity,
          // long ProductPrice,

@@ -111,14 +111,14 @@ namespace Sales.Tests.Sales_TestCases
         }
 
         [Fact]
-        public async Task CreateSalesTest3_MissingCustomerId_ReturnsBadRequest()
+        public async Task Createsalestest3_missingcustomerid_returnsbadrequest()
         {
-            // Arrange
+            // arrange
             var controller = new SalesController(_salesServices);
 
             var sales = new CreateSalesProductListDto(
                 SalesCode: "123",
-                CustomerId: Guid.Empty, 
+                CustomerId: Guid.Empty,
                 SalesQuantity: 1,
                 SalesTotal: 200,
                 DiscountId: Guid.Empty,
@@ -132,15 +132,16 @@ namespace Sales.Tests.Sales_TestCases
                 SaleProducts: new List<SaleProduct>()
             );
 
-            // Act
+            // act
             var res = await controller.Post(sales);
 
-            // Assert
+            // assert
             res.Result.Should().BeOfType<BadRequestObjectResult>();
             var response = (res.Result as BadRequestObjectResult)?.Value as string;
-            response.Should().Contain("CustomerId is required"); // Assuming your validation returns this message
+            response.Should().Contain("customerid is required"); 
         }
 
 
     }
 }
+

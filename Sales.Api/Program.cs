@@ -13,6 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<SaleValidators>());
+builder.Services.AddControllers().AddFluentValidation(sp => sp.RegisterValidatorsFromAssemblyContaining<SaleProductValidators>());
+
 builder.Services.AddControllers();
 
 var configuration = builder.Configuration;
@@ -20,9 +23,6 @@ var configuration = builder.Configuration;
 var conn = configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<SaleDbContext>(option => option.UseSqlServer(conn,b => b.MigrationsAssembly("Sales.Api")));
-
-builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<SaleValidators>());
-builder.Services.AddControllers().AddFluentValidation(sp => sp.RegisterValidatorsFromAssemblyContaining<SaleProductValidators>());
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateSaleProductCommand).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(UpdateSaleProductCommand).Assembly));
