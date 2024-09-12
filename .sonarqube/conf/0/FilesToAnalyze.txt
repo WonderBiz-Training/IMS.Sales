@@ -1,0 +1,3 @@
+﻿D:\Projects\IMS.Sales\Sales.Domain\Entities\BaseEntity.cs
+D:\Projects\IMS.Sales\Sales.Domain\Entities\Sale.cs
+D:\Projects\IMS.Sales\Sales.Domain\Entities\SaleProduct.cs

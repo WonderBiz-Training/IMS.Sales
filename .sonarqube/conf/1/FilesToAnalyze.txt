@@ -1,0 +1,7 @@
+﻿D:\Projects\IMS.Sales\Sales.Infrastructure\Data\SaleDbContext.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Interface\IRepository.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Interface\ISaleProductRepository.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Interface\ISalesRepository.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Repository\Repository.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Repository\SaleProductRepository.cs
+D:\Projects\IMS.Sales\Sales.Infrastructure\Repository\SalesRepository.cs

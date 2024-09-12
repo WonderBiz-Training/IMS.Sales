@@ -1,0 +1,14 @@
+﻿D:\Projects\IMS.Sales\Sales.Api\Controllers\SaleProductController.cs
+D:\Projects\IMS.Sales\Sales.Api\Controllers\Salesontroller.cs
+D:\Projects\IMS.Sales\Sales.Api\Migrations\20240911062859_Tables.cs
+D:\Projects\IMS.Sales\Sales.Api\Migrations\20240911062859_Tables.Designer.cs
+D:\Projects\IMS.Sales\Sales.Api\Migrations\SaleDbContextModelSnapshot.cs
+D:\Projects\IMS.Sales\Sales.Api\Program.cs
+D:\Projects\IMS.Sales\Sales.Api\WeatherForecast.cs
+D:\Projects\IMS.Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.GlobalUsings.g.cs
+D:\Projects\IMS.Sales\Sales.Api\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+D:\Projects\IMS.Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.AssemblyInfo.cs
+D:\Projects\IMS.Sales\Sales.Api\appsettings.Development.json
+D:\Projects\IMS.Sales\Sales.Api\appsettings.json
+D:\Projects\IMS.Sales\Sales.Api\Sales.Api.http
+D:\Projects\IMS.Sales\Sales.Api\Properties\launchSettings.json
